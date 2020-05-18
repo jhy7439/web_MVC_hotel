@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body{margin:0px auto; padding:0px}
+
+#titThumb{width:100%; height:360px; background-image:url(../img/tit_sample.jpg); background-repeat:no-repeat; background-size:cover}
+	
+#mainDiv{width:1280px; margin:0 auto; position:relative; top:-120px}
+	
+#menuTit{width:1280px; height:230px; opacity:0.9; position:relative; z-index:100; top:0px}
+#route{width:1280px; height:30px; margin:0px auto; padding:auto 0px; position:relative; top: -1px; left:-1px}
+#route>img{margin-top:8px; position:relative; float:left}
+#routeTxt{position:relative; float:left; margin-top:3px; font-weight:bold}
+
+#titTxt{text-align:center;  padding-top:67px; width:100%; height:140px; background-color:white; top:-1px; left:-0.3px; position:relative}
+#titTxt>h2{margin:0px auto; padding:0px; font-size:2em}
+#titTxt>p{font-size:14px}
+	
+#content{width:1280px; height:500px; margin:0px auto; padding:0px; background-color:white; position:relative; float:left}
+#noInfo{width:100%; height:400px; background-color:#FAFAFA; text-align:center; border-bottom:1px solid #CDCDCD; border-top:1px solid #CDCDCD; padding-top:100px; margin-top:40px}
+#noInfo>img{width:120px; height:120px}
+#noInfo>h2{font-size:1.5em; font-weight:bold; padding-top:40px}
+	
+#banner{width:100%; height:150px; position:relative; background-image:url(../img/banner_sample.jpg); background-repeat:no-repeat; background-size:cover; float:left}
+#bannerTxt{width:500px; height: 60px; float: left; position:relative; top:45px; left:100px; color:white}
+#bannerTxt>p:nth-child(1){margin:0px auto; font-size:25px; font-weight:bold}
+#bannerTxt>p:nth-of-type(2){margin:2.5px 0px 0px 0px; font-size:15px}
+#banner>button{border: 2px solid white; background-color:transparent; width: 150px; height: 50px; float: right; position: relative; top:50px; left:-100px; color:white; font-weight:bold}
