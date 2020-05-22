@@ -140,7 +140,7 @@ public class memberVO {
 		this.user_pwd = user_pwd;
 	}
 	public String getBirthday() {
-		return year+"/"+month+"/"+day;
+		return year+month+day;
 		
 	}
 	public void setBirthday(String birthday) {
