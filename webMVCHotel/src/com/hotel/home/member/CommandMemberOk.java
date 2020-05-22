@@ -1,6 +1,8 @@
 package com.hotel.home.member;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -34,6 +36,11 @@ public class CommandMemberOk implements CommandService {
 		vo.setMonth(req.getParameter("month"));
 		vo.setDay(req.getParameter("day"));
 		
+		
+		
+
+
+
 		
 		memberDAO dao= new memberDAO();
 		int cnt= dao.memberInsert(vo);

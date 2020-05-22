@@ -2,13 +2,14 @@
 
 h2{margin-bottom:30px;margin-top:0}
 ul,li{list-style-type:none;margin:0;padding:0}
+
 .font_main{
 	display: inline-block;
 	color: #333;
     font-size: 20px;
     font-weight: bold;
 }
-.font_content{display: inline-block;
+.font_con{display: inline-block;
     color: #333;
     font-size: 18px;
     font-weight: bold;}
@@ -19,39 +20,102 @@ ul,li{list-style-type:none;margin:0;padding:0}
 .img_icon{
 	width:40px;
 }
-/*footer*/
-footer{background-color:#F0F0F0;height:200px;bottom:0;position:relative;width:100%;}
-#homeFooter{margin:0;margin-left:30px;width:1280px;height:200px;position:relative;font-weight:bold;top:20px}
-#homeFooterList{width:600px;height:100px;}
-#homeFooterList li:first-child{margin-right:50px;margin-top:-30px}
-#homeFooterList li{float:left;}
 
-#companyIntroduction{width:300px;float:left;height:100px;}
-#companyIntroduction>li{float:left;}
 
-/*rsv 메인 */
-.container{width:1280px; margin:0 auto;}
-.rsv_title{width:800px; height:50px; margin:0 auto;
-		   font-size:2em; text-align:center; 
-		   line-height:50px;}
-.rsv_wrap{with:1280px; margin-top:20px;}		   
-.rsv_select{width:1280px; height:100px; 
-			padding:5px 50px; 
-			border-top:2px solid #856f56;
-			border-bottom: 7px solid #f7f7f7;
-			}
-.rsv_select>div{float:left; text-align:center; margin:5px 5px; }
-.rsv_chk{width:20%; height:80px;}
-.stay{width:10%; height:80px;}
-.rsv_cnt{width:10%; height:80px;}
+/* 폰트  */
+body, div, td, th, p, textarea {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #101010;
+}
+.font_title{text-align:center; font-size:2em;}
+.font_content_title{font-size:16px; font-weight:bold}
+.font_content_name{font-size:14px; font-weight:bold; padding-bottom:10px}
+.font_content{font-size:14px;}
+
+.info_box>p{font-size:13px;padding:5px 0;}
+.form_wrap>ul>li{width:50%; float:left; font-size:13px;}
+
+/* 박스 */
+.rsv_container{width:1280px; margin:0 auto; overflow:hidden }
+.rsv_content_wrap{width:100%; float:left; border:1px solid #dcdcdc;
+			margin:20px 0; }
+.rsv_top_line{border-top:2px solid #9b7f5b}
+.rsv_title_box{
+		   padding: 0 30px;
+		   height:50px;
+		   line-height:50px;
+		   border-bottom:1px solid #dcdcdc;
+		   background-color:#f7f7f7; 	   
+}
+.point_color{color:#cb5d5d}
+
+.rsv_content_box{display:flex; padding:30px;}
+.rsv_content_floatbox{width:1220px; padding:30px; float:left;}
+.rsv_info_box{width:50%;}
+.info_box{text-align:left; width:100%}
+.rsv_input_bar{width:100%; height:50px;
+			   display:flex;margin:1px 0;}
+.rsv_input_bar>div{height:50px; box-sizing:border-box;
+					display:flex;}
+.rsv_input_title{width:125px; padding:17px 0;}
+.rsv_input_content{width:408px;padding:3px 0;}
+.rsv_input_content>input{box-sizing:border-box;padding:13px 10px;}
+.noti_list{margin-top:20px;}
+.noti_list>li{text-indent:-9px;
+    margin-left:17px;
+    line-height:22px;
+    content:'※';
+    font-size: 12px;
+    margin-right: 3px;}
+
+
+/* 예약 메인*/
+.rsv_wrap{width:1280px; }		   
+.rsv_box{width:100%;height:100px; 
+		padding:10px 0px 5px 0px;display:flex;
+		border-top:2px solid #856f56;
+		border-bottom: 7px solid #f7f7f7;
+		}
+.rsv_chk{width:25%; height:80px;text-align:center;}
+.stay{width:5%; height:80px;}
+.rsv_cnt{width:10%;height:80px;
+		cursor:pointer;text-align:center;}
 .rsv_btn_search{width:10%; height:60px;
- 				text-align:center; line-height:60px;
+ 				text-align:center; line-height:80px;
 				}
-.rsv_calendar{width:1280px;}
+.rsv_room_people{width:1280px;}	
+#rsvRoomPeoBox{
+	display:none;
+}			
+.rp_select_box{padding:0 30px 10px;}
+.con_room{width:100%; display:flex; border-bottom:1px solid #dcdcdc}
+.room_cnt_box{width:10%; padding:20px 0; line-height:40px;}
+.people_cnt_wrap{width:80%; padding:20px 0;display:flex;}
+.people_cnt_box{width:50%;display:flex;padding:0 50px;}		
+.people_cnt_box>div{width:35%;text-align:center;line-height:40px;}
+.add_room_box{width:10%;padding:20px 0;}
+#room2{
+	display: none;
+	margin:right;
+}
+#room3{
+	display: none;
+	margin-right:0;
+}
+
+
+#Additional2{
+
+	margin-left:977px;
+}			
+.rsv_calendar{width:1280px;display:none}
 .calendar_box{width:100%;height:320px; padding:0 180px 0 180px;}
 
-.calendar_btn{height:30px; text-align:center;}
-.rsv_btn_search>a{display:block;width:100%;height:60px;
+.confirm_btn{height:30px;padding:30px 0;
+			text-align:center;}
+.rsv_btn_search>input{display:block;width:100%;height:60px;
 					line-height:60px;
 					text-align:center;
 					text-decoration:none;
@@ -60,8 +124,7 @@ footer{background-color:#F0F0F0;height:200px;bottom:0;position:relative;width:10
   					background-color:#3E2B2C;
 				  }
 
-
-.rsv_bookable_list{width:1280px;margin-top:30px;}
+.rsv_bookable_list{width:1280px;padding:100px 0 200px 0;display:none}
 .rsv_bookable_list>ul{width:1280px;}
 .rsv_sort{height:30px;border-bottom:1px solid #f1f1f1;}
 .rsv_sort>li{width:120px; height:20px; line-height: 20px;}
@@ -135,7 +198,7 @@ footer{background-color:#F0F0F0;height:200px;bottom:0;position:relative;width:10
 .popup{width:950px;
 	   display:none;
 	   position:fixed;
-	   left:200px;top:200px;
+	   left:400px;top:100px;
 	   z-index:10;
 	   }
 
@@ -162,76 +225,188 @@ footer{background-color:#F0F0F0;height:200px;bottom:0;position:relative;width:10
 	   top:0px; left:0;
 }
 
+
+/* 라디오버튼 클릭시 요금div  */
+#chargeSelect{display:none;
+				width:100%; position:sticky;
+			bottom:0px; background-color:#fff;
+			border-top:2px solid #9b7f5b;}
+			
+
+
 /*예약 옵션:rservation_option*/
-.title{text-align: center; font-size:2em;}
-.sub_title{width:100%;font-size:16px;
-		   padding: 0 30px;
-		   line-height:50px;
-		   font-weight:bold;	   
-}
-.option_item_title{
-	background-color:#f7f7f7; 
-	border-right:1px solid #dcdcdc;
-	border-left:1px solid #dcdcdc;
-	border-top:1px solid #dcdcdc;
-}
-.content{
-	width:100%; 
-	border:1px solid #dcdcdc;
-	margin:0 0 50px 0;
-}
-.height_s{min-height:150px;}
-.height_m{min-height:300px;}
-.height_l{min-height:500px;}
 
-.item{width:50%;float:left;padding:5px;}
-
-.item_form{padding:5px 30px; font-size:14px;
-					margin:5px 0 30px 0; }
 .form_center{text-align:center; width:100%;
 			 margin:10px auto;}
 .btn_s{width:30px; height:30px;}
+.btn_m{width:40px; height:40px;}
 .ctn_form{border:0; width: 73px;
     height: 28px;text-align:center; 
     font-weight:bold;
-    }
-.option_item_form>table{width:100%}
+ }
+.rsv_item_form>table{width:100%}
 #tableOption span{margin:0 10px;}
 #tableOption{width:100%}
 #tableOption td:first-child{width:100px}
 #tableOption td:nth-child(2){width:100px}
 #tableOption td:nth-child(3){float:right}
-#optionWrap{border-top:2px solid #9b7f5b}
-#pointTxt1{text-align:center; margin:5px 0;}
-#pointTxt2{text-align:center; margin:5px 0;}
+
+
 #point{font-weight:bold; font-size:1.5em; color:#9b7f5b}
+.rsv_point_wrap{
+	width:100%;float:left;border:5px solid #f1e3c4;
+	margin:20px 0;padding:22px 30px;text-align: center;
+}
+.rsv_point_wrap p{font-size:14px;line-height: 170%;}
+.rsv_point{font-size:19px;
+    color: #856f56;
+    font-family: verdana, sans-serif;
+    margin: 0 3px;}
 #btnMoveMember{
-	width:125px; height:35px;
+	font-size:12px;
+	width:160px;
+	height:30px;
 	background-color:#3A3125;
-	padding: 5px 15px;
+	color:#fff;
+	border:none;padding:0 20px;
+	cursor:pointer;
 	}
-.charge_wrap{width:100%; position:sticky;
+
+
+
+/*input 박스 크기*/
+.input_full_box{width:405px;}
+.input_haf_box{width:200px;}
+.input_haf_box2{width:200px;margin-left:5px;}
+.input_phno_box{width:101px;}
+.input_phno_box2{width:141px;}
+.input_card_box{width:93px;}
+
+.hyphen{margin:0 3px; color:#dcdcdc;display:flex;
+		height:10px; line-height:45px;}
+.rsv_exp_box{height:90px;padding:20px;
+			 overflow-y:auto;
+			 border:1px solid #dcdcdc;
+			 box-sizing:border-box;}
+.rsv_item_form{padding:5px 0px; font-size:14px;width:100%;
+				margin:5px 0 30px 0; }
+.col_box{display: table-cell;width:50%;}
+.col_L{padding-right: 30px;}
+.col_R{padding-left: 30px; border-left:1px solid #dcdcdc}
+.table td{padding:10px 0;}
+
+/*라디오 버튼*/
+.rsv_rd_box{margin:20px 0 30px;text-align:right;position:relative}
+.rsv_rd{width:150px; height:20px;float:right;}
+
+
+
+
+/* radio */
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 20px;
+  display: inline-block;
+  color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 19px;
+  height: 19px;
+  border:2px solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+   display: inline-block;
+}
+[type="radio"]:checked + label:before {
+  border:2px solid #9f9cff;
+  border-radius: 100%;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: '';
+  width:9px;
+  height:9px;
+  background: #9f9cff;
+  position: absolute;
+  top:5px;
+  left:5px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+/* 결제 창 */
+.charge_wrap{width:100%; position:sticky;height:98px;
 			bottom:0px; background-color:#fff;
 			border-top:2px solid #9b7f5b
 			}
-.charge_content{width:100%;height:100px;
-				padding:20px 0;
+.charge_content{width:1280px;height:50px;
+				margin:0 auto;
+				padding:24px 0;
 			   }
-.charge_prev{float:left;
-			width: 160px;
-			vertical-align: middle;}
-.charge_box{width:600px;height:50px;
-			float:right;text-align:right;
-			padding-left: 10px;vertical-align: middle;}
-.charge_btn_box{width:300px; height:50px;
-	  text-align:right;vertical-align: middle;}
-.charge_btn_size{width:140px; height:50px;}
-.charge_total_p{text-align: left;
-    			padding-top: 1px;vertical-align: middle;}
-.charge_total_p dd{color: #362311;
-    font-size: 16px;
-    font-weight: bold; float: right;}
+.charge_prev_box{float:left;width:50%;}
+.charge_box{width:639px;float:right;border-left:1px solid #b07748;}
+.charge_btn_size{width:140px;height:50px;
+				border:none; padding:0;
+				cursor:pointer;}
+.charge_btn_color1{background-color:#3E2C2C;
+					font-size:14px;
+					font-weight:bold; color:#fff}
+.charge_btn_color2{background-color:#A9937C;
+					text-align:left;
+					font-size:14px;
+					font-weight:bold; color:#fff}
+.charge_btn_color3{background-color:#A9937C;
+font-size:14px;
+font-weight:bold; color:#fff}				
+.charge_btn_box{height:50px;float:right;
+				padding-left:10px;}
+.charge_total_box{float:left;max-width:70%;height:50px;}
+.charge_total_text{width:150px;float:left;padding-left:10px}
+.charge_total_text>p{margin-block-start:2px;
+    margin-block-end:2px;}
+.charge_total_text>p:nth-child(1){color:#362311;font-weight:bold;font-size:14px;}
+.charge_total_text>p:nth-child(2){font-size:12px;}
+.charge_total_m{color: #362311;width:190px;
+    font-size: 16px;line-height:50px;
+    font-weight: bold; float:right;text-align:right}
 
-/*rsv 고객정보:  */
+
+
+
+			
 
 	

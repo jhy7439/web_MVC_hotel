@@ -1,6 +1,5 @@
 @charset "UTF-8";
-body{margin:0;padding:0}
-h2{margin-bottom:30px;margin-top:0}
+//h2{margin-bottom:30px;margin-top:0}
 ul,li{list-style-type:none;margin:0;padding:0}
 header{width:100%;margin:0 auto;height:50px;font-size:1em;text-align:center;line-height:15px;position:sticky;top:0;z-index:400;margin-top:-20px;opacity:0.9}
 a:link,a:visited{text-decoration:none;color:#555;font-weight:inherit;}
