@@ -1,13 +1,6 @@
 
 $(function (){
-	$("#menubar>li").hover(function(){
-		
-		
-		$(this).children("ul").css("display","block");
-		
-	},function(){
-		$(this).children("ul").css("display","none");
-	});
+	
 	
 	
 	//var imgChangCnt=1;//예약하기 버튼 이미지 변경 cnt
@@ -32,22 +25,18 @@ $(function (){
 	
 	 // 라디오버튼 클릭시 이벤트 발생
     $(".room_item_wrap input:radio").click(function(){
-    	console.log("라디오 이벤트");
     	
+    	//테두리 색상 변경
         if($(this).is(":checked")){
-           $(".room_item_wrap input:radio").closest(".rsv_bed_item").css("border-top","1px solid #dcdcdc").css("border-bottom","1px solid #dcdcdc");
+        	
+           $(".rsv_bed_item").css("border-top","1px solid #dcdcdc").css("border-bottom","1px solid #dcdcdc")
+           .css("border-left","1px solid #dcdcdc").css("border-right","1px solid #dcdcdc");
         	$(this).closest(".rsv_bed_item").css("border","2px solid #856f56");
           // radio 버튼의 value 값이 1이라면 활성화
            //나머지 라디오 버튼 border 초기화
-           
-        }	
-//        if(!$(this).is(":checked")){
-//        	 $(this).closest(".rsv_bed_item").css("border","none");
-//          // $(this).closest(".rsv_bed_item").css("border-style","none");
-//           $(this).closest(".rsv_bed_item").css("border-top","1px solid #dcdcdc").css("border-bottom","1px solid #dcdcdc");
-//            // radio 버튼의 value 값이 0이라면 비활성화
-//        }
-    	
+        	$("#chargeSelect").css("display","block");
+        }
+	
     });
     
     
@@ -161,76 +150,7 @@ $(function (){
 
 
 var now = new Date();
-//달력으로 예약 날짜 잡기
-//function rsvDate(){
-//	
-// 	var srcCal = document.getElementById('src_calendar');
-// 	var destCal = document.getElementById('dest_calendar');
-//
-//    var srcCalendar = new FullCalendar.Calendar(srcCal, {
-//      plugins: [ 'interaction','dayGrid', 'timeGrid','moment' ]
-//    
-//     ,contentHeight:350
-//     ,month: 'short'
-//     ,titleFormat: function(date) {
-//    		return `${date.date.year}. ${date.date.month + 1}`;
-//     }
-//     ,columnHeaderText: function(date) {
-//	    let weekList = ["일", "월", "화", "수", "목", "금", "토"];
-//	    return weekList[date.getDay()];
-//	   }
-//     ,fixedWeekCount:false
-//     ,header: {
-//         left: 'title',
-//         center: '',
-//         right: ''
-//       }
-//     ,defaultDate:now
-//     ,selectable: true
-//     ,dateClick: function(info) {
-//         alert('clicked ' + info.dateStr);
-//      }
-//     ,select: function(start, end) {
-//    	    if(start.isBefore(now)) {
-//    	        $('#src_calendar').fullCalendar('unselect');
-//    	        return false;
-//    	    }
-//     }
-//     
-//
-//    });
-//    
-//    var destCalendar = new FullCalendar.Calendar(destCal, {
-//    	plugins: [ 'interaction','dayGrid', 'timeGrid' ]
-//    	,contentHeight:350
-//    	,month: 'short'
-//    	,titleFormat: function(date) {
-//    			return `${date.date.year}. ${date.date.month + 1}`;
-//    	}
-//        ,columnHeaderText: function(date) {
-//        	let weekList = ["일", "월", "화", "수", "목", "금", "토"];
-//        	return weekList[date.getDay()];
-//	    }
-//        ,fixedWeekCount:false
-//        ,header: {
-//        	left: 'title',
-//        	center: '',
-//        	right: ''
-//        }
-//        ,selectable: true
-//        ,dateClick: function(info) {
-//            alert('clicked ' + info.dateStr);
-//         }
-//        ,select: function(info) {
-//            alert('selected ' + info.startStr + ' to ' + info.endStr);
-//         }
-//        
-//    });
-//    srcCalendar.render();
-//    destCalendar.render();
-//    
-//    
-//}
+
 
 //popup 메뉴
 function clickPopup(){
@@ -245,4 +165,13 @@ function closePopup(){
 	document.body.style.overflow ="scroll";
 }
 
-
+//객실인원예약 토글
+function rsvToggle(){
+	
+	 var div = document.getElementById("rsvRoomPeoBox");
+	 if(div.style.display=="none"){
+		 div.style.display = "block";
+	 }else{
+		 div.style.display = "none";
+	 }
+}

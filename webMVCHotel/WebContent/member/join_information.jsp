@@ -165,7 +165,11 @@
 					<div id="tel" >
 						<label>휴대폰번호</label><label>*</label>
 						<br/>
-						<input type="text" id="tel1" name="tel1">
+						<select id="tel1" name="tel1">
+						<option value="010">010</option>
+						<option value="011">011</option>
+						
+						</select>
 						-
 						<input type="text" id="tel2" name="tel2"/>
 						-
