@@ -1,9 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%
-	String ctx=request.getContextPath();
-%>
 <c:set var="IMG" value="${HOME}/web/image" />
 <c:set var="JS" value="${HOME}/web/js" />
 <c:set var="JSP" value="${HOME}/web/jsp" />
