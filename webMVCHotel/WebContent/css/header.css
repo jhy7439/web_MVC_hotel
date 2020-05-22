@@ -15,8 +15,7 @@ a:hover{text-decoration:none;color:#D0BEA5;font-weight:inherit;}
 #utilbar{width:500px;float:right;font-size:8px;height:15px;position:relative;top:0;z-index:500;left:100px}
 #utilbar>p{margin:0 auto; height:30px}
 
-#section{width:1280px;margin:0 auto;text-align:center;position:relative;}
-#section{width:100%;position:relative;}
+section{width:100%;margin:0 auto;position:relative;top:50px;}
 
 #footer{background-color:#F0F0F0;height:300px;bottom:0;margin-top:100px;position:relative;}
 #homeFooter{margin:0;margin-left:30px;width:1280px;height:200px;position:relative;font-weight:bold;top:30px}
