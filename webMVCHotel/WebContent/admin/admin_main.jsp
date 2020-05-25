@@ -17,14 +17,14 @@
 	<div id="mainTitle">관리자 페이지</div>
 		<ul id="menu">
 			<li><a href="#">예약 관리</a></li>
-			<li>객실 관리</a>
+			<li>호텔 관리</a>
 				<!-- 서브메뉴 -->
 				<ul>
 					<li><a href="${HOME}/admin/roomManage.do">객실 관리</a>
 					<li><a href="${HOME}/admin/bedManage.do">침대 관리</a></li>
-					<li><a href="#">객실 타입 관리</a></li>
+					<li><a href="${HOME}/admin/rTypeManage.do">객실 타입 관리</a></li>
 					<li><a href="#">요금관리</a></li>
-					<li><a href="#"></a></li>
+					<li><a href="#">이벤트관리</a></li>
 				</ul>
 			</li>
 			

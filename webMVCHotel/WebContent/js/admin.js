@@ -48,8 +48,91 @@ $(function(){
 		} 
 	});
 	
+	//이미지 업로드(미리보기 1개)
+	   //var sel_file;
+	   //$("#mImgInput").on("change", handleImgFileSelect);
+	   $("#mainImgInp").change(function(){
+	      readImgURL(this);
+	   })
+	   
+	   //다중 이미지 업로드(미리보기 여러개)
+	   var imgs =[];
+	   $("#subImgInp").on("change", function(e){
+	      // 이미지 정보들을 초기화
+	      imgs =[];
+	      $("#subImgs").empty();
+	      
+	      var files = e.target.files;
+	      var filesArr = Array.prototype.slice.call(files);
+	      
+	      filesArr.forEach(function(f){
+	         if(f.type.match("image/png|image/gif|image/jpeg|image/bmp|image/jpg") 
+	               && f.size<2097152){
+	            
+	        	imgs.push(f);
+	            var reader = new FileReader();
+	            reader.onload = function(e){
+	               var imgThumb = '<div class="img_wrap"><img src="'+e.target.result+'"></div>';
+	               $("#subImgs").append(imgThumb);
+	            }
+	            reader.readAsDataURL(f);
+	         }else{
+	            alert("2mb이하 이미지 파일만 업로드 가능합니다.");
+	            $('#subImgInp').val('');
+	            return false;
+	         }
+	      });
+	   });//다중 이미지 업로드(미리보기 여러개)
+	
+	   
+	 //다중 이미지 업로드(미리보기 여러개)
+	   
+	   $("#subImgInp").on("change", function(e){
+	      // 이미지 정보들을 초기화
+	      imgs =[];
+	      $("#subImgs").empty();
+	      
+	      var files = e.target.files;
+	      var filesArr = Array.prototype.slice.call(files);
+	      
+	      filesArr.forEach(function(f){
+	         if(f.type.match("image/png|image/gif|image/jpeg|image/bmp|image/jpg") 
+	               && f.size<2097152){
+	            
+	        	imgs.push(f);
+	            var reader = new FileReader();
+	            reader.onload = function(e){
+	               var imgThumb = '<div class="img_wrap"><img src="'+e.target.result+'"></div>';
+	               $("#subImgs").append(imgThumb);
+	            }
+	            reader.readAsDataURL(f);
+	         }else{
+	            alert("2mb이하 이미지 파일만 업로드 가능합니다.");
+	            $('#subImgInp').val('');
+	            return false;
+	         }
+	      });
+	   });//다중 이미지 업로드(미리보기 여러개)
+	
 	
 });
+
+//이미지 업로드 핸들러 이미지 업로드(미리보기 1개)
+function readImgURL(input){
+   var url = input.value;
+   var ext = url.substring(url.lastIndexOf('.') + 1).toLowerCase();
+   
+   if(input.files && input.files[0] &&
+   (ext == "gif" || ext == "png" || ext == "jpeg" || ext == "jpg")){
+      var reader = new FileReader();
+      $("#mainImg").empty();
+      reader.onload = function(e){
+         $("#mainImg").attr("src", e.target.result);
+      }
+      
+      reader.readAsDataURL(input.files[0]);
+   }
+}
 
 //null check
 function isEmpty(value){

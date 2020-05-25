@@ -1,0 +1,58 @@
+@charset "UTF-8";
+<?xml-stylesheet type="text/css" href="join.css"?>
+/*헤더,풋터*/
+h2{margin-bottom:30px;margin-top:0}
+ul,li{list-style-type:none;margin:0;padding:0}
+header{width:100%;margin:0 auto;height:300px;font-size:1em;text-align:center;line-height:200px;position:fixed;top:0;z-index:400}
+a:link,a:visited{text-decoration:none;color:#555}
+a:hover{text-decoration:none;color:#000;font-weight:bold}
+#menubar{width:1280px;margin:0 auto;height:70px;border-top:3px solid gray;background-color:white;}
+#menubar>li{float:left;line-height:50px;width:13.7%;text-align:center;height:50px;font-size:20px;font-weight: bold;}
+#menubar>li>ul{position:relative;border-top:3px solid #AF8D5D;z-index:100;display:none;width:500px;height:500px;background-color:white}
+#menubar>li>ul>img{width:300px;height:400px;position:absolute;right:50px;margin-top:50px}
+#menubar>li>ul>li{float:left;height:50px;position:relative;width:400px;text-align:left;left:20px;}
+#crown{width:40px;height:20px}
+footer{background-color:#F0F0F0;height:200px;bottom:0;position:relative;width:100%}
+#section{width:1280px;margin:0 auto;margin-top:100px;text-align:center;position:relative;}
+#homeFooter{margin:0;margin-left:30px;width:1280px;height:200px;position:relative;font-weight:bold;top:20px}
+#homeFooterList{width:600px;height:100px;}
+#homeFooterList li:first-child{margin-right:50px;margin-top:-30px}
+#homeFooterList li{float:left;}
+
+#companyIntroduction{width:300px;float:left;height:100px;}
+#companyIntroduction>li{float:left;}
+
+/*컨텐츠*/
+#content{width: 1280; height:600px;}
+
+#top{width: 800px; height: 200px; margin: 0 auto;}
+h2{margin-bottom:0; margin-top: 200px; color: #9C836A; font-weight:bold; font-size: 2em;}
+#text{margin: 0 0; width: 800px; height: 85px;}
+#text>label{color: #E2E2E2; font-size: 1.3em; font-weight: bold;}
+
+#bottom{width: 1280; height: 350px; background: #F9F9F9}
+#frame{width: 800px; height: 350px; margin: 0 auto; background: #F9F9F9}
+#certified{width: 350px; height: 250px;padding-top: 15px; right:30px}
+#certified>p:first-child{ font-weight:bold; margin-top: 50px}
+#certified>#username{height: 30px; width: 318px}
+#certified>#tel1, #tel2, #tel3{height:30px; width:100px; margin-top:10px}
+#certified>#send{height: 45px; width: 323px; text-align:center; border: 1px solid #A8A8A8; background: #A8A8A8; color: white; margin-top:10px}
+
+#hr{content: ''; display: block; position: absolute; top: 280px; left: 50%; bottom: 0; width: 1px;  height: 330px; background: #e6e3df; z-index:1}
+#or{width:50px; height:30px; font-size:1.2em; color: #9C836A;text-transform: uppercase;display:block; position:absolute; top:55%; left:48.7%; bottom:0px; background: #F9F9F9; text-align:center; z-index:2}
+
+#pwd{width: 350px; height: 250px;padding-top: 15px; position:absolute; left:980px; top:270px}
+#pwd>p:first-child{ font-weight:bold; margin-top: 50px}
+#pwd>button{text-align:center; width:161px; height:30px; float:left;right:50px}
+#telChk{background-color:#F9F9F9; border:none; border-top:2px solid #9C836A; border-left:2px solid #9C836A; border-right:2px solid #9C836A;}
+#emailChk{background-color:#F9F9F9; border:none; border-bottom:2px solid #9C836A; border-top:1px solid gray; border-right:1px solid gray}
+#telId{height: 30px; width:318px; margin-top:10px}
+#telSend{height: 45px; width: 323px; text-align:center; border: 1px solid #A8A8A8; background: #A8A8A8; color: white; margin-top:10px}
+#emailId{height: 30px; width:318px; margin-top:10px}
+#emailName{height: 30px; width:318px; margin-top:10px}
+#email{height: 30px; width:200px; margin-top:10px}
+#emailSend{height:35px; width:100px; margin-left:5px;text-align:center; background-color:white; border:1px solid #9C836A; color:#9C836A}
+
+#title{ font-size: 1.5em; color: black}
+p{margin-top: 50px; color: #A8A8A8;}
+#e{color: black}

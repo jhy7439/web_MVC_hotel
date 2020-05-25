@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/*룸메인*/
+#imgDiv>img{width:100%;height:100px;}
+	#imgDiv{width:100%;height:720px}
+	#eventText{width:1280px;height:130px;position:relative;
+			   text-top:10px;text-align:center;z-index:1;margin: 0 auto}
+
+	#accodion>li>img{width:500px}
+	
+	.image_hover img {
+   transition:0.3s;
+}
+	.image_hover:hover img {
+    transform:scale(1.2);
+}
+.image_hover{
+	width:100%
+	
+}
+	#image_hover{width:100%;height:500px;float:left}
+	#image_hover>div{width:33.3%;height:500px;float:left}
+	
+	
+	#standardMain{width:33%;height:425px;z-index:1;float:left}
+	#deluxeMain{width:33%;height:425px;top:-429px;float:left}
+	#suiteMain{width:33%;height:425px;top:-858px;float:left}	
+	
+	
+	
+	
+	
+	#standardText{z-index:1;font-size:2em;position:relative;top:-200px;left:100px}
+	#deluxeText{z-index:1;font-size:2em;position:relative;top:-200px;left:350px}
+	#suiteText{z-index:1;font-size:2em;position:relative;top:-200px;left:600px}
+	
+
+	
+	
+/*디럭스룸*/	
+	#main{width:1280px; height:2400px;margin:0 auto;padding:300px 0 0 0;position: relative;}
+	#firstDiv{float:left;width:1280px}
+	#text{float:left;position:relative;left:90px;top:40px;}
+	#reservation{float:left;position:relative;left:480px;top:40px}
+	#buttonDiv{float:left;position:relative;left:210px;top:-60px;}
+	button{width:180px;height:40px;background:#DEB887;border:none;}
+	#text1{font-size:2em;}
+	.text2{font-size:0.8em;}
+	
+	#roomText{position:relative;text-align:center}
+	#roomName{position:relative;text-align:center;top:10px;font-size:2em}
+	#suiteRoom{position:relative;top:-50px}
+	/*화살표 이미지*/
+	#left{position:relative;left:35%;top:-5px;width:50px;}
+	#right{position:relative;left:60%;top:-100px;width:50px}
+	
+	#imgDiv>img{position:relative;top:10px;display:block;margin:0 auto;width:100%;height:300px;}
+	#mainimg{position:relative;top:10px;display:block;margin:0 auto;width:100%;height:300px;}
+	#seocondDiv{position:relative;top:120px;}
+	#viewImg{position:relative;left:90px;float:left}
+	#viewImg img{width:790px;height:370px}
+	#viewText{position:relative;left:130px;float:left;top:50px;font-style:italic;}
+	
+	
+	#textBox{position:relative;top:600px;}
+	#information{position:relative;top:70px;right:50px;height:300px;font-size:2.5em}
+	#badagImg{position:relative;left:-450px;top:-140px;}
+	#badagImg img{height:172px;width:291px}
+	#informationText{position:relative;top:-330px;left:900px}
+	
+	#amenitiesMain{position:relative;top:300px;background:#E6E6FA;width:100%;height:200px}
+	#amenities{position:relative;left:200px;top:70px}
+	#service{position:relative;left:750px;top:-90px}
+	#listText{position:relative;left:330px}
+	#serviceText{position:relative;left:870px;top:-150px}
+	
+	
+	.img{position:relative;background-image:url(../img/room/restauran.jpg);width:700px;height:150px;top:350px;
+		 left:300px}
+	 #textImg{position:relative;top:50px;left:20px;font-size:1.5em;color:white}
+	 #buttonMore{position:relative;left:550px;top:-10px}
+	 #buttonMore>button{width:80px;background:#F7F2E0}
+	 #faqText{position:relative;top:420px;text-align:center}
+	 /*이미지 슬라이드*/
+	#slider img{width:1280px;height:300px;}
+	
+	
+	/*스위트 룸*/	
+	#main{width:1280px; height:2400px;margin:0 auto;padding:300px 0 0 0}
+	#firstDiv{float:left;width:1280px}
+	#text{float:left;position:relative;left:90px;top:40px;}
+	#reservation{float:left;position:relative;left:480px;top:40px}
+	#buttonDiv{float:left;position:relative;left:210px;top:-60px;}
+	button{width:180px;height:40px;background:#DEB887;border:none;}
+	#text1{font-size:2em;}
+	.text2{font-size:0.8em;}
+	
+	#roomText{position:relative;text-align:center}
+	#roomName{position:relative;text-align:center;top:10px;font-size:2em}
+	#suiteRoom{position:relative;top:-50px}
+	/*화살표 이미지*/
+	#left{position:relative;left:35%;top:-10px;width:50px}
+	#right{position:relative;left:60%;top:-50px;width:50px}
+	
+	#imgDiv>img{position:relative;top:10px;display:block;margin:0 auto;width:1280px;height:300px;}
+	#seocondDiv{position:relative;top:120px;}
+	#viewImg{position:relative;left:90px;float:left}
+	#viewImg img{width:790px;height:370px}
+	#viewText{position:relative;left:130px;float:left;top:50px;font-style:italic;}
+	
+	
+	#textBox{position:relative;top:600px;}
+	#information{position:relative;top:70px;right:50px;height:300px;font-size:2.5em}
+	#badagImg{position:relative;left:-450px;top:-140px;}
+	#badagImg img{height:172px;width:291px}
+	#informationText{position:relative;top:-330px;left:900px}
+	
+	#amenitiesMain{position:relative;top:300px;background:#E6E6FA;width:100%;height:200px}
+	#amenities{position:relative;left:200px;top:70px}
+	#service{position:relative;left:750px;top:-90px}
+	#listText{position:relative;left:330px}
+	#serviceText{position:relative;left:870px;top:-150px}
+	
+	
+	.img{position:relative;background-image:url(../img/room/restauran.jpg);width:700px;height:150px;top:350px;
+		 left:300px}
+	 #textImg{position:relative;top:50px;left:20px;font-size:1.5em;color:white}
+	 #buttonMore{position:relative;left:550px;top:-10px}
+	 #buttonMore>button{width:80px;background:#F7F2E0}
+	 #faqText{position:relative;top:420px;text-align:center}
+	 
+	 /*이미지 슬라이드*/
+	#slider img{width:1280px;height:300px;}
+	
+	
+	/*스탠다드 룸*/
+	#main{width:1280px; height:2400px;margin:0 auto;padding:300px 0 0 0}
+	#firstDiv{float:left;width:1280px}
+	#text{float:left;position:relative;left:90px;top:40px;}
+	#reservation{float:left;position:relative;left:480px;top:40px}
+	#buttonDiv{float:left;position:relative;left:210px;top:-60px;}
+	button{width:180px;height:40px;background:#DEB887;border:none;}
+	#text1{font-size:2em;}
+	.text2{font-size:0.8em;}
+	
+	#roomText{position:relative;text-align:center}
+	#roomName{position:relative;text-align:center;top:10px;font-size:2em}
+	#suiteRoom{position:relative;top:-50px}
+	/*화살표 이미지*/
+	#left{position:relative;left:35%;top:-5px;width:50px}
+	#right{position:relative;left:60%;top:-100px;width:50px}
+	
+	
+	#imgDiv>img{position:relative;top:10px;display:block;margin:0 auto;width:1280px;height:300px;}
+	#seocondDiv{position:relative;top:120px;}
+	#viewImg{position:relative;left:90px;float:left}
+	#viewText{position:relative;left:130px;float:left;top:50px;font-style:italic;}
+	
+	
+	#textBox{position:relative;top:600px;}
+	#information{position:relative;top:70px;right:50px;height:300px;font-size:2.5em}
+	#badagImg{position:relative;left:-450px;top:-140px}
+	#informationText{position:relative;top:-330px;left:900px}
+	
+	#amenitiesMain{position:relative;top:300px;background:#E6E6FA;width:100%;height:200px}
+	#amenities{position:relative;left:200px;top:70px}
+	#service{position:relative;left:750px;top:-90px}
+	#listText{position:relative;left:330px}
+	#serviceText{position:relative;left:870px;top:-150px}
+	
+	
+	.img{position:relative;background-image:url(../img/room/restauran.jpg);width:700px;height:150px;top:350px;
+		 left:300px}
+	 #textImg{position:relative;top:50px;left:20px;font-size:1.5em;color:white}
+	 #buttonMore{position:relative;left:550px;top:-10px}
+	 #buttonMore>button{width:80px;background:#F7F2E0}
+	 #faqText{position:relative;top:420px;text-align:center}
+	 
+	 
+	 /*이미지 슬라이드*/
+	#slider img{width:1280px;height:300px;}
+	#main{width:1280px;padding:0 auto;margin:0 auto;overflow:hidden;margin-bottom:-500px;height:2500px}
+#informationText{left:0}
+#listText{left:0}
+#imgDiv{width:1280px;height:1500px;margin:0 auto;overflow:hidden;}
+#image_hover{width:100%;height:500px;float:left}
+	#image_hover>div{width:33.3%;height:500px;}

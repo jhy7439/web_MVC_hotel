@@ -1,0 +1,60 @@
+@charset "UTF-8";
+<?xml-stylesheet type="text/css" href="join.css"?>
+/*헤더,풋터*/
+h2{margin-bottom:30px;margin-top:0}
+ul,li{list-style-type:none;margin:0;padding:0}
+header{width:100%;margin:0 auto;height:300px;font-size:1em;text-align:center;line-height:200px;position:fixed;top:0;z-index:400}
+a:link,a:visited{text-decoration:none;color:#555}
+a:hover{text-decoration:none;color:#000;font-weight:bold}
+#menubar{width:1280px;margin:0 auto;height:70px;border-top:3px solid gray;background-color:white;}
+#menubar>li{float:left;line-height:50px;width:13.7%;text-align:center;height:50px;font-size:20px;font-weight: bold;}
+#menubar>li>ul{position:relative;border-top:3px solid #AF8D5D;z-index:100;display:none;width:500px;height:500px;background-color:white}
+#menubar>li>ul>img{width:300px;height:400px;position:absolute;right:50px;margin-top:50px}
+#menubar>li>ul>li{float:left;height:50px;position:relative;width:400px;text-align:left;left:20px;}
+#crown{width:40px;height:20px}
+footer{background-color:#F0F0F0;height:200px;bottom:0;position:relative;width:100%}
+#section{width:1280px;margin:0 auto;margin-top:100px;text-align:center;position:relative;}
+#homeFooter{margin:0;margin-left:30px;width:1280px;height:200px;position:relative;font-weight:bold;top:20px}
+#homeFooterList{width:600px;height:100px;}
+#homeFooterList li:first-child{margin-right:50px;margin-top:-30px}
+#homeFooterList li{float:left;}
+
+#companyIntroduction{width:300px;float:left;height:100px;}
+#companyIntroduction>li{float:left;}
+
+/*컨텐츠*/
+#content{width: 1280; height: 2000px;}
+#top{width: 800px; height: 200px; margin: 0 auto;}
+h2{margin-bottom:0; margin-top: 200px; color: #9C836A; font-weight:bold; font-size: 2em;}
+#text{margin: 0 0; width: 800px; height: 85px;}
+#painting{width: 800px; height: 100px;}
+#text>label{color: #E2E2E2; font-size: 1.3em; font-weight: bold;}
+#bottom{width: 1280; height: 1800px; background: #F9F9F9}
+#frame{width: 800px; height: 1580px; margin: 0 auto; background: #F9F9F9}
+#check{width: 800px; height: 150px;padding-top: 15px; margin-top: 30px}
+#check>p:first-child{ font-weight:bold; margin-top: 50px}
+#check>input{margin-left: 700px;}
+#c1{width: 793px; height: 200px; margin-top: 85px;}
+#terms1{width: 793px; height: 150px; margin-top: 25px; overflow: scroll; overflow-x: hidden; background-color: white;}
+#c1>label{font-weight: bold;}
+#c1>input {margin-left: 695px; margin-top: 10px}
+#c2{width: 793px; height: 200px; margin-top: 85px;}
+#terms2{width: 791px; height: 150px; margin-top: 25px; overflow: scroll; overflow-x: hidden; background-color: white;}
+#c2>label{font-weight: bold;}
+#c2>input {margin-left: 695px; margin-top: 10px}
+#c3{width: 793px; height: 200px; margin-top: 85px;}
+#terms3{width: 791px; height: 150px; margin-top: 25px; overflow: scroll; overflow-x: hidden; background-color: white;}
+#c3>label{font-weight: bold;}
+#c3>input {margin-left: 695px; margin-top: 10px}
+#c4{width: 793px; height: 200px; margin-top: 85px;}
+#terms4{width: 791px; height: 150px; margin-top: 25px; overflow: scroll; overflow-x: hidden; background-color: white;}
+#c4>label{font-weight: bold;}
+#c4>input {margin-left: 695px; margin-top: 10px}
+#c5{width: 793px; height: 200px; margin-top: 85px;}
+#terms5{width: 791px; height: 150px; margin-top: 25px; overflow: scroll; overflow-x: hidden; background-color: white;}
+#c5>label{font-weight: bold;}
+#c5>input {margin-left: 695px; margin-top: 10px}
+#button {width: 800px; height: 150px;}
+#button>hr{margin-top: 80px}
+#r{color: red}
+#next{margin-top: 10px; margin-left: 650px; width: 150px; height: 50px; color: white; border: 1px solid #A8A8A8; background: #A8A8A8; font-size: 1.5em; border-radius: 3px}
