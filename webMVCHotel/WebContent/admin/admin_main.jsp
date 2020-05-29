@@ -24,7 +24,7 @@
 					<li><a href="${HOME}/admin/bedManage.do">침대 관리</a></li>
 					<li><a href="${HOME}/admin/rTypeManage.do">객실 타입 관리</a></li>
 					<li><a href="#">요금관리</a></li>
-					<li><a href="#">이벤트관리</a></li>
+					<li><a href="${HOME}/admin/eventManage.do">이벤트관리</a></li>
 				</ul>
 			</li>
 			
@@ -33,7 +33,7 @@
 			<li><a href="#">매출 관리</a></li>
 		</ul>
 	<div id="content">
-		<img src="${IMG}/s1.jpg"/>
+		<img src="${HOME}/img/s1.jpg"/>
 	</div>
 </div>
 </body>

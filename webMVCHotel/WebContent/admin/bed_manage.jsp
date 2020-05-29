@@ -17,7 +17,7 @@
 	function delBed(bed_code){
 		
 		if(confirm("삭제하시겠습니까?")){
-			location.href="<%=ctx%>/admin/bedDel.do?bed_code="+bed_code;
+			location.href="<%=request.getContextPath()%>/admin/bedDel.do?bed_code="+bed_code;
 		}
 	}
 </script>
@@ -43,7 +43,7 @@
 			<li>${bVo.bed_code}</li>
 			<li>${bVo.bed_type}</li>
 			<li><fmt:formatNumber value="${bVo.bed_rate}" pattern="#,###"/>&nbsp;&nbsp;원</li>
-			<li><a href="<%=ctx%>/admin/bedEdit.do?bed_code=${bVo.bed_code}">수정</a></li>
+			<li><a href="<%=request.getContextPath()%>/admin/bedEdit.do?bed_code=${bVo.bed_code}">수정</a></li>
 					<!-- 문자일떄 : ('') , 숫자일떄 : ()-->
 			<li><a href="javascript:delBed(${bVo.bed_code})">삭제</a></li>
 		</c:forEach>	
