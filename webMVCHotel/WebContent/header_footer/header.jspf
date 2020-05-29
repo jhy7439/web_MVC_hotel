@@ -1,15 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%
-	String ctx = request.getContextPath();
-%>
 <c:set var="HOME" value="${pageContext.request.contextPath}" />
 <c:set var="IMG" value="${HOME}/img" />
 <c:set var="JS" value="${HOME}/js" />
 <c:set var="JSP" value="${HOME}/jsp" />
 <c:set var="CSS" value="${HOME}/css" />
-<c:set var="admin" value="admin"/>
 
 <!DOCTYPE html>
 <html>
@@ -28,10 +24,10 @@
 		</div>
 		<ul id="menubar">
 
-			<li><a href="events_main.html">EVENT</a>
+			<li><a href="<%=request.getContextPath()%>/events/eventsList.do">EVENTS</a>
 				<ul>
 					<li><h2>EVENT</h2></li>
-					<li><a href="events_main.html">EVENTMAIN</a></li>
+					<li><a href="<%=request.getContextPath()%>/events/eventsList.do">EVENTMAIN</a></li>
 					<img src="<%=request.getContextPath() %>/img/7177.png" />
 				</ul></li>
 			<li><a href="room_main.html">ROOM</a>
@@ -42,11 +38,11 @@
 					<li><a href="room_suite.html">SUITE</a></li>
 					<img src="<%=request.getContextPath() %>/img/7177.png" />
 				</ul></li>
-			<li><a href="res_main.html">RESTAURANTS</a>
+			<li><a href="res_main.html">RESTAURANT</a>
 				<ul>
 					<li><h2>RESTAURANTS</h2></li>
-					<li><a href="restaurant.html">레스토랑 안내</a></li>
-					<li><a href="cafe.html">카페</a></li>
+					<li><a href="<%=request.getContextPath()%>/cafe&restaurant/restaurant.do">레스토랑 안내</a></li>
+					<li><a href="<%=request.getContextPath()%>/cafe&restaurant/cafe.do">카페</a></li>
 					<img src="<%=request.getContextPath() %>/img/7177.png" />
 
 				</ul></li>

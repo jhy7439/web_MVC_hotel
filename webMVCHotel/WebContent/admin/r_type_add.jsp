@@ -40,7 +40,7 @@ $(function(){
 <section>
 <div class="container">
 <div><h2>객실 타입 등록 페이지</h2></div>
-<form method="post" id="rTypeFrm" name="rTypeFrm" action="<%=ctx%>/admin/rTypeAddOk.do" enctype="multipart/form-data">
+<form method="post" id="rTypeFrm" name="rTypeFrm" action="<%=request.getContextPath()%>/admin/rTypeAddOk.do" enctype="multipart/form-data">
 	<div>
 		<input type="submit" value="객실 타입 등록"/>
 		<input type="reset" value="Reset"/>
