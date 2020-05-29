@@ -37,7 +37,7 @@
 	<servlet-class>com.hotel.home.ControllerAction</servlet-class>
 	<init-param>
 	<param-name>proConfig</param-name>
-	<param-value>C:\software\workspaceWeb\webMVCHotel\WebContent\WEB-INF\prop\urlMapping.properties</param-value>
+	<param-value>D:\software\workspaceWeb\webMVCHotel\WebContent\WEB-INF\prop\urlMapping.properties</param-value>
 	
 	
 	</init-param>

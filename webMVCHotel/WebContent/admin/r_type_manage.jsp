@@ -25,18 +25,18 @@
 	
 	<div id="listTitle">객실타입 리스트</div>
 	<ul id="typeList">
-		<li>객실타입코드</li>
+		<li>타입코드</li>
 		<li>메인이미지</li>
 		<li>객실타입</li>
-		<li>침대코드</li>
+		<li>객실위치</li>
 		<li>설명</li>
 		<li>이벤트적용</li>
-		<c:forEach var="tVo" items="${lst}">
-			<li>객실타입코드</li>
-			<li>메인이미지</li>
-			<li>객실타입</li>
-			<li>침대코드</li>
-			<li>설명</li>
+		<c:forEach var="rtVo" items="${lst}">
+			<li>${rtVo.room_type_code}</li>
+			<li><a href="<%=ctx%>/admin/rTypeView.do?room_type_code=${rtVo.room_type_code}"><img src="<%=ctx%>/upload/${rtVo.roomImgList[0]}"></a></li>
+			<li>${rtVo.room_type}</li>
+			<li>${rtVo.room_loc}</li>
+			<li>${rtVo.mainCont}</li>
 			<li>이벤트적용</li>
 		</c:forEach>	
 	</ul>

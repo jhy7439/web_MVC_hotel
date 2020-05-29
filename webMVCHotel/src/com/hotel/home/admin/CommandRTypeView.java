@@ -1,7 +1,6 @@
 package com.hotel.home.admin;
 
 import java.io.IOException;
-import java.util.List;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -9,16 +8,25 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.hotel.home.CommandService;
 
-public class CommandRTypeAdd implements CommandService {
+public class CommandRTypeView implements CommandService {
 
-	public CommandRTypeAdd() {
+	public CommandRTypeView() {
 		
 	}
 
 	@Override
 	public String processStart(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		
-		return "/admin/r_type_add.jsp";
+		RTypeVO vo = new RTypeVO();
+	
+		vo.setRoom_type_code(Integer.parseInt(req.getParameter("room_type_code")));
+		
+		RTypeDAO dao = new RTypeDAO();
+		
+		dao.typeSelect(vo);
+		System.out.println("RTypeView 커멘드");
+		req.setAttribute("vo", vo);
+		return "/admin/r_type_view.jsp";
 	}
 
 }
