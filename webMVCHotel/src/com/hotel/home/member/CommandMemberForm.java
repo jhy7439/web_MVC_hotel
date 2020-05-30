@@ -17,7 +17,7 @@ public class CommandMemberForm implements CommandService {
 	@Override
 	public String processStart(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		return "/member/memberForm.jsp";
+		return "/member/join_information.jsp";
 	}
 
 }

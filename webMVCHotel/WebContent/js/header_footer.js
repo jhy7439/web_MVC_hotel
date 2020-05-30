@@ -1,5 +1,5 @@
 var scrollValue;
-$(function (){
+$(function(){
 	$("#menubar>li").hover(function(){
 		
 		

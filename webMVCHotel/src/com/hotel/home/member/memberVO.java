@@ -2,66 +2,45 @@ package com.hotel.home.member;
 
 public class memberVO {
 	private int member_code;
-	
 	private String user_name;
-	
 	private String user_en_name;
-	private String user_first_name;
+	private String user_en_firstname;
 	private String user_last_name;
-	
 	private String user_tel;
 	private String tel1;
 	private String tel2;
 	private String tel3;
-	
 	private String user_email;
 	private String email_id;
 	private String email_domain;
-	
-	private String user_addr;
 	private String zipcode;
 	private String addr;
 	private String addrdetail;
-	
 	private String user_id;
-	
 	private String user_pwd;
-	
 	private String birthday;
 	private String year;
 	private String month;
 	private String day;
 	
 	private String regdate;
-	
 	private String log_date;
 	private String loginStatus="N";
-	private String pwdStatus="N";
 	public memberVO() {
 
 	}
 	public String toString() {
-		return member_code+"/"+user_name+"/"+user_en_name+"/"+user_first_name+"/"+user_last_name+"/"+user_tel+"/"+tel1+"/"+tel2+"/"+tel3+"/"+user_email+"/"+email_id+"/"+email_domain+"/"+user_addr+"/"+zipcode+"/"+addr+"/"+addrdetail+"/"+user_id+"/"+user_pwd+"/"+birthday+"/"+year+"/"+month+"/"+day+"/"+regdate;
+		return member_code+"/"+user_name+"/"+user_en_name+"/"+user_tel+"/"+user_email+"/"+zipcode+addr+"/"+addrdetail+"/"+user_id+"/"+user_pwd+"/"+birthday+"/"+regdate;
 	}
-	public memberVO(int member_code,String user_name,String user_en_name,String user_first_name, String user_last_name, String user_tel, String tel1, String tel2, String tel3,String user_email, String email_id, String email_domain, String user_id,String user_pwd,String birthday, String year, String month, String day, String regdate,String log_date) {
+	public memberVO(int member_code,String user_name,String user_en_name,String user_tel,String user_email,String user_id,String user_pwd,String birthday,String regdate,String log_date) {
 			this.member_code=member_code;
 			this.user_name=user_name;
 			this.user_en_name=user_en_name;
-			this.user_first_name=user_first_name;
-			this.user_last_name=user_last_name;
 			this.user_tel=user_tel;
-			this.tel1=tel1;
-			this.tel2=tel2;
-			this.tel3=tel3;
 			this.user_email=user_email;
-			this.email_id=email_id;
-			this.email_domain=email_domain;
 			this.user_id=user_id;
 			this.user_pwd=user_pwd;
 			this.birthday=birthday;
-			this.year=year;
-			this.month=month;
-			this.day=day;
 			this.regdate=regdate;
 			this.log_date=log_date;
 
@@ -79,16 +58,17 @@ public class memberVO {
 		this.user_name = user_name;
 	}
 	public String getUser_en_name() {
-		return user_first_name+user_last_name;
+		return user_en_name;
 	}
 	public void setUser_en_name(String user_en_name) {
 		this.user_en_name = user_en_name;
 	}
-	public String getUser_first_name() {
-		return user_first_name;
+	
+	public String getUser_en_firstname() {
+		return user_en_firstname;
 	}
-	public void setUser_first_name(String user_first_name) {
-		this.user_first_name = user_first_name;
+	public void setUser_en_firstname(String user_en_firstname) {
+		this.user_en_firstname = user_en_firstname;
 	}
 	public String getUser_last_name() {
 		return user_last_name;
@@ -101,7 +81,7 @@ public class memberVO {
 	}
 	public void setUser_tel(String user_tel) {
 		this.user_tel = user_tel;
-		String t[] = user_tel.split("-");
+		String t[]=user_tel.split("-");
 		tel1 = t[0];
 		tel2 = t[1];
 		tel3 = t[2];
@@ -124,15 +104,17 @@ public class memberVO {
 	public void setTel3(String tel3) {
 		this.tel3 = tel3;
 	}
+	
 	public String getUser_email() {
 		return email_id+"@"+email_domain;
 	}
 	public void setUser_email(String user_email) {
 		this.user_email = user_email;
-		String ue[]=user_email.split("@");
-		email_id = ue[0];
-		email_domain = ue[1];
+		int idx=user_email.indexOf("@");
+		email_id =user_email.substring(0,idx);
+		email_domain=user_email.substring(idx+1,user_email.length());
 	}
+	
 	public String getEmail_id() {
 		return email_id;
 	}
@@ -144,34 +126,6 @@ public class memberVO {
 	}
 	public void setEmail_domain(String email_domain) {
 		this.email_domain = email_domain;
-	}
-	public String getUser_addr() {
-		return zipcode+"/"+addr+"/"+addrdetail;
-	}
-	public void setUser_addr(String user_addr) {
-		this.user_addr = user_addr;
-		String ua[]=user_addr.split("/");
-		zipcode = ua[0];
-		addr = ua[1];
-		addrdetail = ua[2];
-	}
-	public String getZipcode() {
-		return zipcode;
-	}
-	public void setZipcode(String zipcode) {
-		this.zipcode = zipcode;
-	}
-	public String getAddr() {
-		return addr;
-	}
-	public void setAddr(String addr) {
-		this.addr = addr;
-	}
-	public String getAddrdetail() {
-		return addrdetail;
-	}
-	public void setAddrdetail(String addrdetail) {
-		this.addrdetail = addrdetail;
 	}
 	public String getUser_id() {
 		return user_id;
@@ -187,6 +141,7 @@ public class memberVO {
 	}
 	public String getBirthday() {
 		return year+"/"+month+"/"+day;
+		
 	}
 	public void setBirthday(String birthday) {
 		this.birthday = birthday;
@@ -194,7 +149,9 @@ public class memberVO {
 		year = b[0];
 		month = b[1];
 		day = b[2];
+		
 	}
+	
 	public String getYear() {
 		return year;
 	}
@@ -225,17 +182,29 @@ public class memberVO {
 	public void setLog_date(String log_date) {
 		this.log_date = log_date;
 	}
+	public String getZipcode() {
+		return zipcode;
+	}
+	public void setZipcode(String zipcode) {
+		this.zipcode = zipcode;
+	}
+	public String getAddr() {
+		return addr;
+	}
+	public void setAddr(String addr) {
+		this.addr = addr;
+	}
+	public String getAddrdetail() {
+		return addrdetail;
+	}
+	public void setAddrdetail(String addrdetail) {
+		this.addrdetail = addrdetail;
+	}
 	public String getLoginStatus() {
 		return loginStatus;
 	}
 	public void setLoginStatus(String loginStatus) {
 		this.loginStatus = loginStatus;
 	}
-	public String getPwdStatus() {
-		return pwdStatus;
-	}
-	public void setPwdStatus(String pwdStatus) {
-		this.pwdStatus = pwdStatus;
-	}
-	
+
 }
