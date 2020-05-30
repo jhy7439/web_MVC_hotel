@@ -22,7 +22,7 @@
 	</div>
 	<hr/>
 	<div>
-		추가가격 : <input type="text" name="bed_rate" id ="bed_rate" value="0" style="text-align:right"/>원
+		추가가격 : <input type="text" name="bed_rate" id ="price" value="0" style="text-align:right"/>원
 	</div>
 	<hr/>
 	<div>
