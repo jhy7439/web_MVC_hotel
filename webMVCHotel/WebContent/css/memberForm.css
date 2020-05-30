@@ -1,0 +1,133 @@
+@charset "UTF-8";
+<?xml-stylesheet type="text/css" href="join.css"?>
+/*헤더,풋터*/
+
+#companyIntroduction{width:300px;float:left;height:100px;}
+#companyIntroduction>li{float:left;}
+
+/*컨텐츠*/
+#frame{width: 1280; height: 1280px;}
+
+#title{width: 800px; height: 200px; margin: 70px auto;}
+
+	h2{color: #9C836A; font-weight:bold; font-size: 2em;}
+	
+	#text{width: 800px; height: 85px;}
+	
+	#text>label{color: #E2E2E2; font-size: 1.3em; font-weight: bold;}
+	
+	#painting{margin-top: 30px}
+		
+#bg{width: 1280; height: 1200px; background: #F9F9F9}
+
+#content{width: 800px; height: 1200px; margin: 0 auto; background: #F9F9F9;}
+
+	#idForm{width: 800px; height: 200px;}
+	
+		#idForm>div{width: 800px; height: 200px;}
+	
+		#idForm>label:first-child{font-weight:bold; margin-top: 30px; font-size: 14px}
+	
+		#idForm>label:nth-child(2){font-size: 13px; color: red; position: relative; left: 520px;}
+		
+		#idForm>label:nth-child(5){font-weight:bold; font-size: 13px; color: #9C836A} 
+		
+		#idForm>label:nth-child(6){color: red}
+	
+		#user_id{width: 280px; height: 30px; margin-top: 5px; font-size: 13px;}
+	
+		#idCheck{background-color: #A8A8A8; height: 35px; color: white; border: 1px solid #A8A8A8; margin-left: 7px; border-radius: 3px}
+	
+		#l1{width: 50px; height: 50px; position: relative; font-size: 13px; color: red; left: 310px; top: -60px}
+
+	#pwdForm{width: 800px; height: 100px;}
+
+		#pwdForm>div{float: left; width: 399px; height: 100px;}
+		
+			#pwd>label:first-child{font-weight:bold; font-size: 13px; color: #9C836A}
+		
+			#pwd>label:nth-child(2){color: red}
+	
+			#user_pwd{width: 280px; height: 30px; margin-top: 5px; font-size: 13px;}
+			
+			#pwdChk{position: relative; left: 50px}
+		
+			#pwdChk>label:first-child{font-weight:bold; font-size: 13px; color: #9C836A}
+
+			#pwdChk>label:nth-child(2){color: red}
+
+			#user_pwd_check{width: 280px; height: 30px; margin-top: 5px; font-size: 13px;}
+
+	#hr1{margin-top: 30px}
+
+	#infoForm{width: 800px; height: 580px;}
+
+		#nameForm{width: 800px; height: 110px;}
+		
+		#nameForm>label:first-child{font-weight:bold; margin-top: 30px; font-size: 14px}
+		
+		#nameForm>div{float: left; width: 399px; height: 100px;}
+
+			#name{width: 350px; height: 110px;}
+			
+			#name>label:first-child{font-weight:bold; font-size: 13px; color: #9C836A}
+			
+			#name>label:nth-child(2){color: red}
+			
+			#user_name{width: 280px; height: 30px; margin-top: 5px; font-size: 13px;}
+
+			#eName{position: relative; left: 50px}
+		
+			#eName>label:first-child{font-weight:bold; font-size: 13px; color: #9C836A}
+
+			#eName>label:nth-child(2){color: red}
+
+			#user_first_name{width: 132px; height: 30px; margin-top: 5px; font-size: 13px;}
+			
+			#user_last_name{width: 132px; height: 30px; margin-top: 5px; font-size: 13px; margin-left: 8px}
+
+		#midfrm>div{width: 399px; height: 110px; float: left;}
+
+			#birth>label:first-child{font-weight:bold; font-size: 13px; color: #9C836A; margin-top: 20px}
+			
+			#birth>label:nth-child(2){color: red}
+			
+			#birth>select{width: 75px; height: 30px; margin-top: 5px; font-size: 13px;}
+			
+			#birth{font-size: 13px;}
+			
+			#tel{position: relative; left: 50px}
+
+			#tel>label:first-child{font-weight:bold; font-size: 13px; color: #9C836A; margin-top: 20px}
+
+			#tel>label:nth-child(2){color: red}
+			
+			#tel1, #tel2, #tel3{width: 80px; height: 30px; margin-top: 5px; font-size: 13px;}
+
+		#midfrm2>div{width: 399px; height: 230px; float: left; margin-top: 20px;}
+
+			#email>label:first-child{font-weight:bold; font-size: 13px; color: #9C836A}
+			
+			#email_id{width: 150px; height: 30px; margin-top: 5px; font-size: 13px;}
+			
+			#email_domain{width: 100px; height: 30px; margin-top: 5px; font-size: 13px;}
+
+			#email_consent>label{color: #A8A8A8; font-size: 13px;}
+
+			#email_consent{color: #000000; font-size: 13px;}
+			
+			#address{position: relative; left: 50px}
+
+			#address>label:first-child{font-weight:bold; font-size: 13px; color: #9C836A}
+
+			#address>label:nth-child(2){color: red}
+
+			#zipcode{width: 150px; height: 30px; margin-top: 5px; font-size: 13px;}
+			
+			#zipcodeserch{background-color: #A8A8A8; height: 35px; color: white; border: 1px solid #A8A8A8; margin-left: 7px; border-radius: 3px}
+			
+			#addr{width: 270px; height: 30px; margin-top: 5px; font-size: 13px;}
+
+			#addrdetail{width: 270px; height: 30px; margin-top: 5px; font-size: 13px;}
+			
+		#memberOk{position:relative; left:568px; top:20px; width: 150px; height: 50px; color: white; border: 1px solid #A8A8A8; background: #A8A8A8; font-size: 1.5em; border-radius: 3px}
