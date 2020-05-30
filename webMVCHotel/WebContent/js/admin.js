@@ -12,33 +12,34 @@ $(function(){
 			alert("침대타입을 입력하세요.");
 			return false;//submit 이벤트 중지
 		}
-		if($("#bed_rate").val() == ""){
-			alert("추가금액을 입력하세요.");
+		if($("#price").val() == ""){
+			alert("금액을 입력하세요.");
 			return false;//submit 이벤트 중지
 		}	
 	});
 	
 
 	//침대 추가요금 3자리마다  ,//금액 입력 시 숫자만 표기//포커스가 사라지면 콤마를 추가하여 금액 표기
-	$('#bed_rate').on('focus',function(){
-		var rate = $('#bed_rate').val();
+	$('#price').on('focus',function(){
+		var rate = $('#price').val();
 		if(!isEmpty(rate)){
 			rate = rate.replace(/,/g,'');
-			$('#bed_rate').val(rate);
+			$('#price').val(rate);
 		}
 	});
 	
-	$('#bed_rate').on('blur',function(){
-		var rate = $('#bed_rate').val();
+	$('#price').on('blur',function(){
+		var rate = $('#price').val();
 		if(!isEmpty(rate) && isNumeric(rate)){
 			rate = currencyFormatter(rate);
-			$('#bed_rate').val(rate);
+			$('#price').val(rate);
 		}
 	});
 	//숫자만 입력
-	$("#bed_rate").on("keyup", function() {
+	$("#price").on("keyup", function() {
 	    $(this).val($(this).val().replace(/[^0-9]/g,""));
 	});
+	
 	//침대타입 글자수 제한
 	$('#bed_type').keyup(function(){ 
 		if ($(this).val().length > $(this).attr('maxlength')) {

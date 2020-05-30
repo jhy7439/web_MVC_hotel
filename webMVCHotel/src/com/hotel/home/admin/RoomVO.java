@@ -8,9 +8,10 @@ public class RoomVO {
 	private String room_num;
 	private String room_status;
 	private String room_name;
+	private int room_price;
 	private int max_adult;
 	private int max_child;
-	private int room_price;
+	
 	
 	public RoomVO() {
 		

@@ -13,6 +13,9 @@ public class CommandRoomAddOk implements CommandService {
 	@Override
 	public String processStart(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		req.setCharacterEncoding("UTF-8");
+		//금액 ,제거 (100,000 -> 100000 변환)
+		String rateComma = req.getParameter("room_price");
+		String rate = rateComma.replaceAll(",", "");
 		
 		RoomVO vo = new RoomVO();
 		
@@ -20,6 +23,8 @@ public class CommandRoomAddOk implements CommandService {
 		vo.setRoom_num(req.getParameter("room_num"));
 		//객실이름
 		vo.setRoom_name(req.getParameter("room_name"));
+		//객실가격
+		vo.setRoom_price(Integer.parseInt(req.getParameter(rate)));
 		//객실최대인원(어른)
 		vo.setMax_adult(Integer.parseInt(req.getParameter("max_adult")));
 		//객실최대인원(아이)
